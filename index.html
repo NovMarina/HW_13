@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <title>HW_13</title>
+</head>
+<body>
+<div class="container">
+    <div class="allTasks">
+        <button data-task="task_1">Task 1</button>
+        <button data-task="task_2">Task 2</button>
+        <button data-task="task_3">Task 3</button>
+        <button data-task="task_4">Task 4</button>
+        <button data-task="task_5">Task 5</button>
+    </div>
+
+    <div id="task_1">
+        <div class=" task_1_1 side_indent">
+            <div class="btnsSize sides_margin_10">
+                <button data-size="15">15px</button>
+                <button data-size="25">25px</button>
+                <button data-size="35">35px</button>
+            </div>
+            <div class="btnsClr sides_margin_10">
+                <button data-color="red">red</button>
+                <button data-color="green">green</button>
+                <button data-color="blue">blue</button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam dignissimos, dolore doloribus
+                incidunt
+                ipsum laudantium nulla officiis, quas ratione rem repellendus soluta voluptates. Alias cum delectus
+                ducimus
+                nam necessitatibus qui, voluptatibus. Accusantium animi asperiores autem corporis deleniti deserunt
+                distinctio dolorum eos molestiae obcaecati, odio quidem quisquam saepe ullam voluptate. Accusamus
+                asperiores
+                debitis, dolorum eaque esse et ex excepturi expedita fugit iste itaque minima nam nisi non numquam
+                praesentium quasi quia quisquam quo sed, sequi ut, vel! Eligendi ipsum laborum quam quia! Aperiam aut
+                consequuntur deleniti, dolore et fugiat id illum in inventore iure iusto laboriosam nemo nisi odio omnis
+                possimus quaerat quasi qui quibusdam quisquam repudiandae sequi similique sint tempore temporibus,
+                tenetur
+                ullam? Aperiam autem enim laborum quam temporibus?</p>
+        </div>
+        <hr>
+        <div class=" task_1_2 side_indent">
+            <div class="inputBtnsSize sides_margin_10">
+                <input class="input_size" type="text" placeholder="Write size">
+                <button class="set">set</button>
+            </div>
+            <div class="inputBtnsClr sides_margin_10">
+                <input class="input_clr" type="text" placeholder="Write color">
+                <button class="set">set</button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam dignissimos, dolore doloribus
+                incidunt
+                ipsum laudantium nulla officiis, quas ratione rem repellendus soluta voluptates. Alias cum delectus
+                ducimus
+                nam necessitatibus qui, voluptatibus. Accusantium animi asperiores autem corporis deleniti deserunt
+                distinctio dolorum eos molestiae obcaecati, odio quidem quisquam saepe ullam voluptate. Accusamus
+                asperiores
+                debitis, dolorum eaque esse et ex excepturi expedita fugit iste itaque minima nam nisi non numquam
+                praesentium quasi quia quisquam quo sed, sequi ut, vel! Eligendi ipsum laborum quam quia! Aperiam aut
+                consequuntur deleniti, dolore et fugiat id illum in inventore iure iusto laboriosam nemo nisi odio omnis
+                possimus quaerat quasi qui quibusdam quisquam repudiandae sequi similique sint tempore temporibus,
+                tenetur
+                ullam? Aperiam autem enim laborum quam temporibus?</p>
+        </div>
+    </div>
+
+    <div id="task_2" class="hidden">
+        <div class=" expression sides_margin_10">
+            <input   id="number1" class="sides_margin_10" type="text" placeholder="Write number 1">
+            <select name="action" id="action_select">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="division">/</option>
+            </select>
+            <input id="number2" class="sides_margin_10" type="text" placeholder="Write number 2">
+        </div>
+        <div class="calculate">
+            <button class="btnCalc">Calculate</button>
+        </div>
+        <div class="result"><p></p></div>
+    </div>
+    <div id="task_3" class="hidden">
+        <div class="sides_margin_10 ">
+            <input class="sides_margin_10" id="inputText" type="text" placeholder="Write text">
+         <button class="check">Check</button>
+            <div class="palindromResult sides_margin_10"><span></span></div>
+        </div>
+    </div>
+    <div id="task_4" class="hidden"></div>
+    <div id="task_5" class="hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
