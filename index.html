@@ -13,10 +13,8 @@
         <button data-task="task_2">Task 2</button>
         <button data-task="task_3">Task 3</button>
         <button data-task="task_4">Task 4</button>
-        <button data-task="task_5">Task 5</button>
     </div>
-
-    <div id="task_1">
+    <div id="task_1" class="hidden">
         <div class=" task_1_1 side_indent">
             <div class="btnsSize sides_margin_10">
                 <button data-size="15">15px</button>
@@ -67,10 +65,9 @@
                 ullam? Aperiam autem enim laborum quam temporibus?</p>
         </div>
     </div>
-
     <div id="task_2" class="hidden">
         <div class=" expression sides_margin_10">
-            <input   id="number1" class="sides_margin_10" type="text" placeholder="Write number 1">
+            <input id="number1" class="sides_margin_10" type="text" placeholder="Write number 1">
             <select name="action" id="action_select">
                 <option value="add">+</option>
                 <option value="subtract">-</option>
@@ -87,12 +84,40 @@
     <div id="task_3" class="hidden">
         <div class="sides_margin_10 ">
             <input class="sides_margin_10" id="inputText" type="text" placeholder="Write text">
-         <button class="check">Check</button>
+            <button class="check">Check</button>
             <div class="palindromResult sides_margin_10"><span></span></div>
         </div>
     </div>
-    <div id="task_4" class="hidden"></div>
-    <div id="task_5" class="hidden"></div>
+
+    <div id="task_4" class="hidden">
+        <div class="calculatorBox">
+            <div class="display">
+                <p id="displayText"></p>
+            </div>
+            <div class="keyboard">
+                <div class="numbersBtn">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                </div>
+                <div class="actionBtn">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>*</button>
+                    <button>/</button>
+                    <button>C</button>
+                    <button>=</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>

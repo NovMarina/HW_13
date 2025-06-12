@@ -13,7 +13,7 @@ buttons.forEach(button => {
         });
     };
 });
-//----------------------------------------------------------------------
+//------------------------------TASk-1---------------------------------------
 const text1 = document.querySelector(".task_1_1>p");
 const text2 = document.querySelector(".task_1_2>p");
 const inputSize = document.querySelector(".input_size");
@@ -49,7 +49,7 @@ document.querySelectorAll(".task_1_2 .set")[1].onclick = function () {
         alert("Wrong color format.");
     }
 };
-//_______________________________________________________________________
+//------------------------------TASk-2---------------------------------------
 const number1 = document.getElementById("number1");
 const number2 = document.getElementById("number2");
 const action = document.getElementById("action_select");
@@ -84,7 +84,7 @@ document.querySelector(".btnCalc").addEventListener("click", function () {
             alert("Wrong numbers");
     }
 );
-//------------------------------------------------------------
+//------------------------------TASk-3---------------------------------------
 const inputPalindromText = document.getElementById("inputText");
 const btnCheck = document.querySelector(".check");
 const resPalindromeBox = document.querySelector(".palindromResult > span");
@@ -100,8 +100,34 @@ const falsePalindromeBox = () => {
 };
 
 btnCheck.addEventListener("click", function () {
-    const text = inputPalindromText.value.trim().toLowerCase();
+    const text = inputPalindromText.value;
     const reversedText = text.split("").reverse().join("");
     const isPalindrome = text === reversedText;
     isPalindrome ? truePalindrome() : falsePalindromeBox();
+});
+
+//------------------------------TASk-4---------------------------------------
+const display = document.getElementById("displayText");
+const buttonsCalc = document.querySelectorAll(".numbersBtn>button, .actionBtn>button");
+
+
+buttonsCalc.forEach(button => {
+    button.onclick = () => {
+        const val = button.textContent;
+        if (val === "C") {
+            display.textContent = "";
+        } else if (val === "=") {
+            const expr = display.textContent;
+            const parts = expr.split("/");
+            if (parts.length > 1 && parts[1].trim().startsWith("0") && parts[1].trim().length === 1) {
+                alert("Division by zero");
+                display.textContent = "";
+                return;
+            }
+            const result = eval(expr);
+            display.textContent = result;
+        } else {
+            display.textContent += val;
+        }
+    };
 });
